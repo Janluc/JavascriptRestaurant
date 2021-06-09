@@ -1,3 +1,6 @@
+import createHomeContent from './home';
+import './style.css';
+
 const content = document.querySelector('#content');
 
 const makeNav = () => {
@@ -23,3 +26,5 @@ const makeNav = () => {
 }
 
 document.body.prepend(makeNav());
+
+content.append(createHomeContent());
