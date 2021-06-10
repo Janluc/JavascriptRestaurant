@@ -32,6 +32,7 @@ header{
 
 nav {
   padding-top: 1.5em;
+  color: white;
 
 }
 
@@ -94,6 +95,7 @@ nav {
 
 .main-page-display:nth-child(even){
   background-color: #afd275;
+  color: white;
 }
 
 .main-page-display h3 {
@@ -108,6 +110,7 @@ nav {
 
 #menu {
   background-color: #afd275;
+  color: white;
 }
 
 #menu h1 {
@@ -126,6 +129,7 @@ nav {
 
 #menu section:nth-child(odd){
   background-color: white;
+  color: black;
 }
 
 #menu section div{
@@ -149,5 +153,23 @@ nav {
 }
 
 .menu-section  h2{
+  text-align: center;
+}
+
+/* CONTACT */
+
+.contact-page {
+  background-color: #afd275;
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 92.5vh;
+}
+
+.contact-page * {
+  padding-top: 1rem;
+  font-size: 2rem;
+}
+.contact-page h1 {
   text-align: center;
 }
