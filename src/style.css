@@ -17,6 +17,8 @@ ol, ul {
 
 /* CSS Reset END */
 
+/* Nav */
+
 header{
   height: 55px;
   background-color: #e7717d;
@@ -38,8 +40,22 @@ nav {
 .nav-list li {
   align-self: flex-end;
   cursor: pointer;
+  transition: all 0.25s;
 }
 
+.nav-list li:hover {
+  color:cornflowerblue;
+  padding-bottom: 7px;
+}
+
+.selected-nav {
+  color: cornflowerblue;
+  cursor: default !important;
+  transition: color 0.25s;
+}
+.selected-nav:hover{
+  padding-bottom: 0px !important;
+}
 /* Main Page */
 
 .banner {
