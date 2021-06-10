@@ -17,14 +17,6 @@ ol, ul {
 
 /* CSS Reset END */
 
-.banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 646px;
-}
-
 header{
   height: 55px;
   background-color: #e7717d;
@@ -46,4 +38,40 @@ nav {
 .nav-list li {
   align-self: flex-end;
   cursor: pointer;
+}
+
+/* Main Page */
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 646px;
+}
+
+.banner h1 {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-size: 52px;
+}
+
+.main-page-display{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 636px;
+}
+
+.main-page-display:nth-child(even){
+  background-color: #afd275;
+}
+
+.main-page-display h3 {
+  margin: 1em;
+  font-size: 46px;
+}
+.main-page-display p {
+  font-size: 32px;
 }
