@@ -11,6 +11,8 @@ const makeNav = () => {
   const navMenu = document.createElement('li');
   const navContact = document.createElement('li');
 
+  navList.classList.add('nav-list')
+
   navHome.textContent = 'Home';
   
   navMenu.textContent = 'Menu';
