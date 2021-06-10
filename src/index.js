@@ -1,6 +1,7 @@
+
 import createHomeContent from './home';
 import makeMenuPage from './menu';
-import makeContactPage from './contact'
+import makeContactPage from './contact';
 import './style.css';
 
 const content = document.querySelector('#content');
@@ -15,11 +16,10 @@ const makeNav = () => {
   const navHome = document.createElement('li');
   const navMenu = document.createElement('li');
   const navContact = document.createElement('li');
-
+  
   selectedTab = navHome;
-
-  navList.classList.add('nav-list')
-
+  selectedTab.classList.add('selected-nav')
+  
   navHome.textContent = 'Home';
   navHome.addEventListener('click', () => updateCurrentPage('home', navHome));
   
@@ -28,16 +28,19 @@ const makeNav = () => {
   
   navContact.textContent = 'Contact';
   navContact.addEventListener('click', () => updateCurrentPage('contact', navContact));
+  
+  navList.classList.add('nav-list')
 
   navList.append(navHome, navMenu, navContact);
-  nav.append(navList);
+  nav.appendChild(navList);
   header.appendChild(nav);
 
-  return header
+  return header;
 }
 
 const removeContent = () => {
   content.removeChild(currentContent);
+  content.classList.toggle('content-is-active')
 }
 
 const updateCurrentPage = (newPage, newTab) => {
@@ -58,9 +61,16 @@ const updateCurrentPage = (newPage, newTab) => {
     currentContent = updatedPage
     
     content.appendChild(currentContent);
+    fadeTabs();
   }
 }
 
-document.body.prepend(makeNav());
+const fadeTabs = () => {
+  setTimeout(() => {
+    content.classList.toggle('content-is-active');
+  })
+}
 
+document.body.prepend(makeNav());
 content.append(currentContent);
+fadeTabs();

@@ -16,8 +16,14 @@ ol, ul {
 }
 
 /* CSS Reset END */
-
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
 /* Nav */
+
+#content {
+  opacity: 0;
+}
 
 header{
   height: 55px;
@@ -29,6 +35,11 @@ nav {
 
 }
 
+#content.content-is-active {
+  opacity: 1 !important;
+  transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
 .nav-list {
   display:flex;
   justify-content: space-around;
@@ -56,6 +67,7 @@ nav {
 .selected-nav:hover{
   padding-bottom: 0px !important;
 }
+
 /* Main Page */
 
 .banner {
@@ -90,4 +102,52 @@ nav {
 }
 .main-page-display p {
   font-size: 32px;
+}
+
+/* MENU */
+
+#menu {
+  background-color: #afd275;
+}
+
+#menu h1 {
+  text-align: center;
+  padding-top: 4rem;
+  font-size: 52px;
+}
+
+#menu section {
+  padding: 5rem 25rem;
+}
+
+#menu section h2 {
+  font-size: 42px;
+}
+
+#menu section:nth-child(odd){
+  background-color: white;
+}
+
+#menu section div{
+  padding: 2rem 0;
+  font-size: 1.5em;
+}
+
+.center-page {
+  margin: 0 auto;
+}
+.menu-item > *{
+  margin: .5em 0;
+}
+
+.menu-item:nth-child(even) {
+  text-align: right;
+}
+
+.menu-section{
+  max-width: max-content;
+}
+
+.menu-section  h2{
+  text-align: center;
 }
