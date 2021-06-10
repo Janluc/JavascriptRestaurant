@@ -13,16 +13,20 @@
   padding: 5rem 25rem;
 }
 
+.menu-section h2 {
+  text-align: center;
+}
+
 #menu section h2 {
   font-size: 42px;
 }
 
-#menu section:nth-child(odd){
+#menu section:nth-child(odd) {
   background-color: white;
   color: black;
 }
 
-#menu section div{
+#menu section div {
   padding: 2rem 0;
   font-size: 1.5em;
 }
@@ -30,18 +34,15 @@
 .center-page {
   margin: 0 auto;
 }
-.menu-item > *{
-  margin: .5em 0;
+
+.menu-item > * {
+  margin: 0.5em 0;
 }
 
 .menu-item:nth-child(even) {
   text-align: right;
 }
 
-.menu-section{
+.menu-section {
   max-width: max-content;
-}
-
-.menu-section  h2{
-  text-align: center;
 }
