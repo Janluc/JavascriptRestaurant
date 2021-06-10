@@ -11,6 +11,38 @@ let currentContent = createHomeContent();
 
 let selectedTab;
 
+const fadeTabs = () => {
+  setTimeout(() => {
+    content.classList.toggle('content-is-active');
+  });
+};
+
+const removeContent = () => {
+  content.removeChild(currentContent);
+  content.classList.toggle('content-is-active');
+};
+
+const updateCurrentPage = (newPage, newTab) => {
+  let updatedPage;
+  if (selectedTab !== newTab) {
+    if (newPage === 'menu') updatedPage = makeMenuPage();
+    else if (newPage === 'contact') updatedPage = makeContactPage();
+    else if (newPage === 'home') updatedPage = createHomeContent();
+  }
+
+  if (updatedPage) {
+    removeContent();
+    selectedTab.classList.remove('selected-nav');
+    selectedTab = newTab;
+    selectedTab.classList.add('selected-nav');
+
+    currentContent = updatedPage;
+
+    content.appendChild(currentContent);
+    fadeTabs();
+  }
+};
+
 const makeNav = () => {
   const header = document.createElement('header');
   const nav = document.createElement('nav');
@@ -38,38 +70,6 @@ const makeNav = () => {
   header.appendChild(nav);
 
   return header;
-};
-
-const removeContent = () => {
-  content.removeChild(currentContent);
-  content.classList.toggle('content-is-active');
-};
-
-const updateCurrentPage = (newPage, newTab) => {
-  let updatedPage;
-  if (selectedTab != newTab) {
-    if (newPage === 'menu') updatedPage = makeMenuPage();
-    else if (newPage === 'contact') updatedPage = makeContactPage();
-    else if (newPage === 'home') updatedPage = createHomeContent();
-  }
-
-  if (updatedPage) {
-    removeContent();
-    selectedTab.classList.remove('selected-nav');
-    selectedTab = newTab;
-    selectedTab.classList.add('selected-nav');
-
-    currentContent = updatedPage;
-
-    content.appendChild(currentContent);
-    fadeTabs();
-  }
-};
-
-const fadeTabs = () => {
-  setTimeout(() => {
-    content.classList.toggle('content-is-active');
-  });
 };
 
 document.body.prepend(makeNav());

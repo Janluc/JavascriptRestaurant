@@ -1,21 +1,9 @@
 import icon from './restaurant-banner.jpg';
 
-const createHomeContent = () => {
-  const homeDiv = document.createElement('div');
-
-  homeDiv.append(createHomeBanner());
-  homeDiv.append(homeDescription());
-  homeDiv.append(homeLocation());
-  homeDiv.append(homeHours());
-
-  return homeDiv;
-};
-
-// Private
 const createHomeBanner = () => {
   const bannerDiv = document.createElement('div');
 
-  bannerDiv.style.backgroundImage = `url(\'${icon}\')`;
+  bannerDiv.style.backgroundImage = `url('${icon}')`;
   bannerDiv.classList.add('banner');
 
   const bannerText = document.createElement('h1');
@@ -65,7 +53,7 @@ const homeHours = () => {
   homeHoursTitle.textContent = 'Schedule';
   homeHoursDiv.appendChild(homeHoursTitle);
 
-  for (let i = 0; i < week.length; i++) {
+  for (let i = 0; i < week.length; i += 1) {
     const weekDay = document.createElement('p');
     const closingTime = i > 2 && i < 6 ? '12AM' : '10PM';
     weekDay.textContent = `${week[i]}: 9AM - ${closingTime}`;
@@ -73,6 +61,17 @@ const homeHours = () => {
     homeHoursDiv.appendChild(weekDay);
   }
   return homeHoursDiv;
+};
+
+const createHomeContent = () => {
+  const homeDiv = document.createElement('div');
+
+  homeDiv.append(createHomeBanner());
+  homeDiv.append(homeDescription());
+  homeDiv.append(homeLocation());
+  homeDiv.append(homeHours());
+
+  return homeDiv;
 };
 
 export default createHomeContent;
