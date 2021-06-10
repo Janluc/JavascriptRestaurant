@@ -18,6 +18,6 @@ const makeContactPage = () => {
   content.append(contactTitle, contactName, contactEmail, contactNumber);
   container.append(content);
   return container;
-}
+};
 
 export default makeContactPage;

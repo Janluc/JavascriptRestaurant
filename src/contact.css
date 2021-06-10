@@ -1,0 +1,15 @@
+.contact-page {
+  background-color: #afd275;
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 92.5vh;
+}
+
+.contact-page * {
+  padding-top: 1rem;
+  font-size: 2rem;
+}
+.contact-page h1 {
+  text-align: center;
+}

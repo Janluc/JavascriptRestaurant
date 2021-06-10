@@ -5,13 +5,13 @@ module.exports = {
   entry: './src/index.js',
   devtool: 'inline-source-map',
   devServer: {
-    contentBase: './dist'
+    contentBase: './dist',
   },
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
   },
-  module:{
+  module: {
     rules: [
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
@@ -21,7 +21,7 @@ module.exports = {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
-    ]
+    ],
   },
 
-}
+};

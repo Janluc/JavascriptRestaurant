@@ -19,7 +19,6 @@ ol, ul {
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
-/* Nav */
 
 #content {
   opacity: 0;
@@ -67,109 +66,4 @@ nav {
 }
 .selected-nav:hover{
   padding-bottom: 0px !important;
-}
-
-/* Main Page */
-
-.banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 646px;
-}
-
-.banner h1 {
-  color: white;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  font-size: 52px;
-}
-
-.main-page-display{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 636px;
-}
-
-.main-page-display:nth-child(even){
-  background-color: #afd275;
-  color: white;
-}
-
-.main-page-display h3 {
-  margin: 1em;
-  font-size: 46px;
-}
-.main-page-display p {
-  font-size: 32px;
-}
-
-/* MENU */
-
-#menu {
-  background-color: #afd275;
-  color: white;
-}
-
-#menu h1 {
-  text-align: center;
-  padding-top: 4rem;
-  font-size: 52px;
-}
-
-#menu section {
-  padding: 5rem 25rem;
-}
-
-#menu section h2 {
-  font-size: 42px;
-}
-
-#menu section:nth-child(odd){
-  background-color: white;
-  color: black;
-}
-
-#menu section div{
-  padding: 2rem 0;
-  font-size: 1.5em;
-}
-
-.center-page {
-  margin: 0 auto;
-}
-.menu-item > *{
-  margin: .5em 0;
-}
-
-.menu-item:nth-child(even) {
-  text-align: right;
-}
-
-.menu-section{
-  max-width: max-content;
-}
-
-.menu-section  h2{
-  text-align: center;
-}
-
-/* CONTACT */
-
-.contact-page {
-  background-color: #afd275;
-  color: white;
-  display: flex;
-  align-items: center;
-  height: 92.5vh;
-}
-
-.contact-page * {
-  padding-top: 1rem;
-  font-size: 2rem;
-}
-.contact-page h1 {
-  text-align: center;
 }
