@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Mickey's Buffalo Wings",
+    "price": "5.99",
+    "description": "8pc fried chicken wings with Mickey's special buffalo sauce"
+  },
+  {
+    "name": "Mickey's Supreme Fries",
+    "price": "4.99",
+    "description": "French fries with melted cheddar cheese, bacon, and ground beef"
+  },
+  {
+    "name": "Mickey's Mashed Potatos",
+    "price": "2.99",
+    "description": "Mickey's classical mashed potatos with gravy"
+  },
+  {
+    "name": "Mickey's Burger",
+    "price": "8.99",
+    "description": "Mickey's signature burger"
+  },
+ {
+  "name": "Mickey's Mac and Cheese",
+  "price": "2.99",
+  "description": "Mickey's signature mac and cheese" 
+ },
+ {
+   "name": "Original Philly Cheese steak",
+   "price": "5.99",
+   "description": "An authentic philly cheese steak sandwhich"
+ },
+ {
+   "name": "Mickey's Chili Dog",
+   "price": "3.99",
+   "description": "Mickey's Chili Dog with special sauce and spicy chili"
+ },
+ {
+   "name": "Mickey's Shake",
+   "price": "2.99",
+   "description": "Creamy milkyshake in the flavor of your choosing"
+ },
+ {
+  "name": "Mickey's Smoothie",
+  "price": "2.99",
+  "description": "Refreshing smoothie made from a selection of fruits"
+ }
+]
