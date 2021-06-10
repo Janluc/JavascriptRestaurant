@@ -1,4 +1,5 @@
 import createHomeContent from './home';
+import makeMenuPage from './menu';
 import './style.css';
 
 const content = document.querySelector('#content');
