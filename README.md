@@ -13,10 +13,13 @@
 ## Prerequisites
 
 - An up to date web browser such as Google Chrome, Mozilla Firefox, or Microsoft Edge
+- A terminal with npm installed
 
 ## Setup
 - Clone or download repository to local machine
-- Open folder and click on index.html to have a local version of the app running
+- Run 'npm install' in the terminal to install the packages.
+- Run 'npm run build' to build with webpack.
+- Run 'npn run start' to open the site in your browser.
 
 ## Authors
 ### Janluc Saneaux
