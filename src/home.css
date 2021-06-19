@@ -1,0 +1,35 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 646px;
+}
+
+.banner h1 {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-size: 52px;
+}
+
+.main-page-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 636px;
+}
+
+.main-page-display:nth-child(even) {
+  background-color: #afd275;
+  color: white;
+}
+
+.main-page-display h3 {
+  margin: 1em;
+  font-size: 46px;
+}
+
+.main-page-display p {
+  font-size: 32px;
+}

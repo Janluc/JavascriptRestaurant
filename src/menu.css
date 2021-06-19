@@ -1,0 +1,48 @@
+#menu {
+  background-color: #afd275;
+  color: white;
+}
+
+#menu h1 {
+  text-align: center;
+  padding-top: 4rem;
+  font-size: 52px;
+}
+
+#menu section {
+  padding: 5rem 25rem;
+}
+
+.menu-section h2 {
+  text-align: center;
+}
+
+#menu section h2 {
+  font-size: 42px;
+}
+
+#menu section:nth-child(odd) {
+  background-color: white;
+  color: black;
+}
+
+#menu section div {
+  padding: 2rem 0;
+  font-size: 1.5em;
+}
+
+.center-page {
+  margin: 0 auto;
+}
+
+.menu-item > * {
+  margin: 0.5em 0;
+}
+
+.menu-item:nth-child(even) {
+  text-align: right;
+}
+
+.menu-section {
+  max-width: max-content;
+}

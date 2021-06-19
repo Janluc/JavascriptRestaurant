@@ -1,0 +1,82 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+/* CSS Reset END */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+  opacity: 0;
+}
+
+header {
+  height: 55px;
+  background-color: #e7717d;
+}
+
+nav {
+  padding-top: 1.5em;
+  color: white;
+}
+
+#content.content-is-active {
+  opacity: 1 !important;
+  transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 24px;
+  height: 20px;
+}
+
+.nav-list li {
+  align-self: flex-end;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.nav-list li:hover {
+  color: cornflowerblue;
+  padding-bottom: 7px;
+}
+
+.selected-nav {
+  color: cornflowerblue;
+  cursor: default !important;
+  transition: color 0.25s;
+}
+
+.selected-nav:hover {
+  padding-bottom: 0 !important;
+}
